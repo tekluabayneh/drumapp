@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body,
+html {
+  width: 100%;
+  height: 100dvh;
+  background: #b3b3b3;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner_container {
+  width: 60%;
+  height: 300px;
+  overflow: hidden;
+  outline: 5px solid orange;
+  position: relative;
+  width: 660px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem;
+  background-color: #b3b3b3;
+}
+
+.btn_container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+}
+
+.sub_flex {
+  display: flex;
+  align-items: center;
+  justify-content: centers;
+  transition: transform 0.2s ease;
+}
+
+.drum-pad {
+  width: 100px;
+  height: 80px;
+  background-color: grey;
+  box-shadow: black 3px 3px 5px;
+  margin: 0.5rem 0.5rem;
+  font-weight: 900;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.controls-container {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  gap: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  right: 1px;
+}
+
+.select button {
+  width: 50px;
+  background: #000;
+  height: 1.4rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+#display {
+  width: 80%;
+  height: 3rem;
   color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(90, 90, 90);
+  border-radius: 0.2rem;
 }
+.logo {
+  display: flex;
 
-.App-link {
-  color: #61dafb;
+  .inner-logo {
+    font-weight: 900;
+  }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.volume-slider input {
+  width: 100%;
+  background: #000;
 }
