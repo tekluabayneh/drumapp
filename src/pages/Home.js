@@ -148,7 +148,7 @@ const SongPlayHome = () => {
         </div>
 
         {/* controllercontainer */}
-        <div className="controls-container">
+        <div className="controls-container main">
           <div className="control">
             <p>Power</p>
             <div className="select">
